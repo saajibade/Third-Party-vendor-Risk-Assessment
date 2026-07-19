@@ -1,14 +1,14 @@
 # Third-Party Vendor Security Assessment Report
 
 ## 1. Executive Summary
-Following a thorough third-party risk evaluation of CloudLedger Technologies Ltd and their cloud-based loan platform, OriginateCloud, the engagement has been tiered as a **CRITICAL** inherent risk profile[cite: 3]. Due diligence auditing identified **2 Critical**, **2 High**, and **3 Medium** control deficiencies across their security framework. 
+Following a thorough third-party risk evaluation of CloudLedger Technologies Ltd and their cloud-based loan platform, OriginateCloud, the engagement has been tiered as a **CRITICAL** inherent risk profile. Due diligence auditing identified **2 Critical**, **2 High**, and **3 Medium** control deficiencies across their security framework. 
 
 **Recommendation: CONDITIONAL APPROVAL BLOCKED.** Meridian Trust Bank cannot authorize production data onboarding under its current state. Onboarding is officially blocked until the two Critical findings (F1: Public Admin MFA and F2: Evidenced DR Testing) are fully remediated and re-audited.
 
 ---
 
 ## 2. Full Scope of Engagement
-*   **Target Vendor Asset:** CloudLedger Technologies Ltd | **Platform:** OriginateCloud v1.3[cite: 3]
+*   **Target Vendor Asset:** CloudLedger Technologies Ltd | **Platform:** OriginateCloud v1.3
 *   **Data Classifications:** Non-public personal info (NPI), customer banking transactions, and physical passport scans.
 *   **Business Impact:** Supports the primary retail mortgage and personal loan origination workflow pipeline.
 *   **Evaluation Baseline:** SOC 2 Type II (Security Criteria, period ending March 2025), ISO/IEC 27001:2022 Certification, Redcliff Penetration Test Summary (May 2025), and Corporate Data Processing Agreements (DPA).
@@ -25,7 +25,7 @@ Because Finding **F1** (MFA absence on exposed core consoles) and Finding **F2**
 ## 4. Binding Remediation Plan (Contractual Conditions)
 To align this engagement with corporate compliance bounds, CloudLedger must execute the following remediation roadmap before any live customer records are synchronized:
 
-### Phase 1: Pre-Sign Off Requirements (Must resolve within 30 days to clear the go-live block)[cite: 3]
+### Phase 1: Pre-Sign Off Requirements (Must resolve within 30 days to clear the go-live block)
 1.  **Remediation of F1 (Access Control Security):** CloudLedger must enforce mandatory Multi-Factor Authentication (MFA) across the entire internal administrative console footprint and restrict access permissions exclusively to corporate IP addresses or secure VPN gateways. Proof of configuration changes and a clean validation scan must be provided to Meridian.
 2.  **Remediation of F2 (Resilience Security):** The vendor must coordinate and document a full disaster-recovery and database restoration exercise. A certified copy of the recovery log detailing RTO/RPO metrics must be submitted to our GRC team for review.
 
